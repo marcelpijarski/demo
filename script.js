@@ -1,4 +1,4 @@
-// Mobile menu toggle
+
 const burger = document.querySelector('.nav__burger');
 const list = document.querySelector('.nav__list');
 if (burger) {
@@ -6,7 +6,7 @@ if (burger) {
   list.querySelectorAll('a').forEach(a => a.addEventListener('click', () => list.classList.remove('open')));
 }
 
-// Subtle reveal on scroll
+
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -24,12 +24,12 @@ document.querySelectorAll('.section, .card, .transformations figure, .price, .re
   io.observe(el);
 });
 
-// Sticky nav shadow
+
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
   nav.style.boxShadow = window.scrollY > 30 ? '0 10px 30px rgba(0,0,0,.25)' : 'none';
 });
-/* cookies.js */
+
 
 const cookieBox = document.getElementById("cookieBox");
 const acceptCookies = document.getElementById("acceptCookies");
